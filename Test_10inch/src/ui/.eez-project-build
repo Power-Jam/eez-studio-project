@@ -12,6 +12,7 @@
     "images/ui_image_level1_screen1.c",
     "images/ui_image_level1_screen2.c",
     "images/ui_image_level1_screen3.c",
+    "images/ui_image_level1_screen4.c",
     "images/ui_image_level_done.c",
     "images/ui_image_level_ongoing.c",
     "images/ui_image_nav_bar.c",

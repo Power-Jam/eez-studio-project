@@ -1,6 +1,6 @@
 #include "images.h"
 
-const ext_img_desc_t images[16] = {
+const ext_img_desc_t images[17] = {
     { "RoadmapScreenShot", &img_roadmap_screen_shot },
     { "level_done", &img_level_done },
     { "level_ongoing", &img_level_ongoing },
@@ -17,4 +17,5 @@ const ext_img_desc_t images[16] = {
     { "level1_screen1", &img_level1_screen1 },
     { "level1_screen2", &img_level1_screen2 },
     { "level1_screen3", &img_level1_screen3 },
+    { "level1_screen4", &img_level1_screen4 },
 };

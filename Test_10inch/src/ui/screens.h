@@ -200,15 +200,20 @@ typedef struct _objects_t {
     lv_obj_t *obj22;
     lv_obj_t *obj23;
     lv_obj_t *obj24;
-    lv_obj_t *roadmap_background;
     lv_obj_t *obj25;
     lv_obj_t *obj26;
+    lv_obj_t *roadmap_background;
+    lv_obj_t *obj27;
+    lv_obj_t *obj28;
+    lv_obj_t *obj29;
+    lv_obj_t *obj30;
+    lv_obj_t *obj31;
     lv_obj_t *shop_button;
     lv_obj_t *user_selection;
     lv_obj_t *shop_overlay;
     lv_obj_t *close_button;
-    lv_obj_t *obj27;
-    lv_obj_t *obj28;
+    lv_obj_t *obj32;
+    lv_obj_t *obj33;
 } objects_t;
 
 extern objects_t objects;
