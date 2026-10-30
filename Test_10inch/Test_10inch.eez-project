@@ -3997,7 +3997,9 @@
               "userWidgetPageName": "NavBar",
               "userPropertyValues": {
                 "objID": "b16f5a0d-b6a6-40c2-af69-2cbb70393cba",
-                "values": {}
+                "values": {
+                  "d69edaf0-19af-4206-8292-b65d5587a8e3": "\"Level 1\""
+                }
               }
             }
           ],
@@ -6774,6 +6776,30 @@
               "useStackType": "literal"
             }
           ]
+        },
+        {
+          "objID": "118bfff6-f126-4324-f687-589c9f0f40d8",
+          "type": "NoopActionComponent",
+          "left": 684,
+          "top": -156,
+          "width": 105,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": [],
+          "description": "this should later on be a button which reads out loud the page",
+          "name": "listen-button"
+        },
+        {
+          "objID": "5c506e25-5dcb-4666-9764-a6a13109dfb9",
+          "type": "NoopActionComponent",
+          "left": 849,
+          "top": -161,
+          "width": 98,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": [],
+          "description": "im not sure yet what this button should do, help ig?",
+          "name": "help-button"
         }
       ],
       "connectionLines": [
@@ -6796,6 +6822,20 @@
           "source": "0a919afa-1d5a-42a2-a077-2ec6d513bd9d",
           "output": "CLICKED",
           "target": "50bc74b6-ca94-491c-9356-987cc2344223",
+          "input": "@seqin"
+        },
+        {
+          "objID": "b0c1aa92-0521-4b13-e6c2-6d17a0e05380",
+          "source": "11e5b989-586b-4f68-9d02-787b1358f49e",
+          "output": "CLICKED",
+          "target": "118bfff6-f126-4324-f687-589c9f0f40d8",
+          "input": "@seqin"
+        },
+        {
+          "objID": "d396cb58-fbcc-4a45-bda5-11ecb9063aed",
+          "source": "0bbf6b54-0e80-4df1-fc0c-5ca44a05c3ca",
+          "output": "CLICKED",
+          "target": "5c506e25-5dcb-4666-9764-a6a13109dfb9",
           "input": "@seqin"
         }
       ],
