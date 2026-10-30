@@ -1,0 +1,32 @@
+{
+  "files": [
+    "actions.h",
+    "fonts.h",
+    "images.c",
+    "images.h",
+    "images/ui_image_chapters_screen_background.c",
+    "images/ui_image_coins_logo.c",
+    "images/ui_image_hat.c",
+    "images/ui_image_homepage_background.c",
+    "images/ui_image_level.c",
+    "images/ui_image_level1_screen1.c",
+    "images/ui_image_level1_screen2.c",
+    "images/ui_image_level1_screen3.c",
+    "images/ui_image_level_done.c",
+    "images/ui_image_level_ongoing.c",
+    "images/ui_image_nav_bar.c",
+    "images/ui_image_overlay_shop.c",
+    "images/ui_image_profile_background.c",
+    "images/ui_image_roadmap_screen_shot.c",
+    "images/ui_image_shop_background.c",
+    "images/ui_image_user_list_background.c",
+    "screens.c",
+    "screens.h",
+    "structs.h",
+    "styles.c",
+    "styles.h",
+    "ui.c",
+    "ui.h",
+    "vars.h"
+  ]
+}
