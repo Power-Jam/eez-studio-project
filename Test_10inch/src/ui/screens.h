@@ -175,13 +175,6 @@ typedef struct _objects_t {
     lv_obj_t *obj19__obj10;
     lv_obj_t *obj19__obj11;
     lv_obj_t *obj19__obj12;
-    lv_obj_t *color;
-    lv_obj_t *elizabeth_venter;
-    lv_obj_t *elizabeth;
-    lv_obj_t *anna_venter;
-    lv_obj_t *anna;
-    lv_obj_t *emma_venter;
-    lv_obj_t *emma;
     lv_obj_t *btn_start;
     lv_obj_t *btn_users;
     lv_obj_t *add_user_button;
