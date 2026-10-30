@@ -5516,8 +5516,8 @@
           "type": "LVGLImageWidget",
           "left": 0,
           "top": -3,
-          "width": 1024,
-          "height": 66,
+          "width": 0,
+          "height": 0,
           "customInputs": [],
           "customOutputs": [],
           "style": {
@@ -5793,7 +5793,15 @@
               },
               "hiddenInEditor": false,
               "timeline": [],
-              "eventHandlers": [],
+              "eventHandlers": [
+                {
+                  "objID": "8584c132-235f-447b-fe73-dd7a7a3bf952",
+                  "eventName": "CLICKED",
+                  "handlerType": "flow",
+                  "action": "ChangeScreen",
+                  "userData": 0
+                }
+              ],
               "leftUnit": "px",
               "topUnit": "px",
               "widthUnit": "px",
@@ -5866,8 +5874,8 @@
                   "type": "LVGLImageWidget",
                   "left": -20,
                   "top": -11,
-                  "width": 55,
-                  "height": 35,
+                  "width": 0,
+                  "height": 0,
                   "customInputs": [],
                   "customOutputs": [],
                   "style": {
@@ -6241,6 +6249,13 @@
           "source": "0bbf6b54-0e80-4df1-fc0c-5ca44a05c3ca",
           "output": "CLICKED",
           "target": "5c506e25-5dcb-4666-9764-a6a13109dfb9",
+          "input": "@seqin"
+        },
+        {
+          "objID": "c85ab372-5d6a-44bd-dc72-3c6f4abff0da",
+          "source": "dbb09c9b-536e-443a-cc34-24545e622970",
+          "output": "CLICKED",
+          "target": "50133834-ae03-4bfc-ebe9-d7217722041b",
           "input": "@seqin"
         }
       ],
