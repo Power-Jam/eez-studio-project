@@ -389,6 +389,14 @@ void create_screen_home_page() {
     tick_screen_home_page();
 }
 
+void delete_screen_home_page() {
+    lv_obj_delete(objects.home_page);
+    objects.home_page = 0;
+    objects.btn_start = 0;
+    objects.btn_users = 0;
+    deletePageFlowState(0);
+}
+
 void tick_screen_home_page() {
     void *flowState = getFlowState(0, 0);
     (void)flowState;
@@ -462,6 +470,15 @@ void create_screen_user_list_view() {
     }
     
     tick_screen_user_list_view();
+}
+
+void delete_screen_user_list_view() {
+    lv_obj_delete(objects.user_list_view);
+    objects.user_list_view = 0;
+    objects.add_user_button = 0;
+    objects.obj20 = 0;
+    objects.obj21 = 0;
+    deletePageFlowState(1);
 }
 
 void tick_screen_user_list_view() {
@@ -875,6 +892,30 @@ void create_screen_user_creation() {
     tick_screen_user_creation();
 }
 
+void delete_screen_user_creation() {
+    lv_obj_delete(objects.user_creation);
+    objects.user_creation = 0;
+    objects.backdrop_user_creation = 0;
+    objects.shape_user_creation_0 = 0;
+    objects.text_user_creation_0 = 0;
+    objects.text_user_creation_2 = 0;
+    objects.action_user_creation_avatar_1_1 = 0;
+    objects.action_user_creation_avatar_2_2 = 0;
+    objects.action_user_creation_avatar_3_3 = 0;
+    objects.action_user_creation_avatar_4_4 = 0;
+    objects.action_user_creation_avatar_5_5 = 0;
+    objects.action_user_creation_avatar_6_6 = 0;
+    objects.action_user_creation_avatar_7_7 = 0;
+    objects.action_user_creation_avatar_8_8 = 0;
+    objects.action_user_creation_avatar_9_9 = 0;
+    objects.action_user_creation_cancel_10 = 0;
+    objects.text_user_creation_3 = 0;
+    objects.action_user_creation_confirm_11 = 0;
+    objects.text_user_creation_4 = 0;
+    objects.obj22 = 0;
+    deletePageFlowState(2);
+}
+
 void tick_screen_user_creation() {
     void *flowState = getFlowState(0, 2);
     (void)flowState;
@@ -969,6 +1010,17 @@ void create_screen_chapters() {
     }
     
     tick_screen_chapters();
+}
+
+void delete_screen_chapters() {
+    lv_obj_delete(objects.chapters);
+    objects.chapters = 0;
+    objects.obj0 = 0;
+    objects.obj23 = 0;
+    objects.obj24 = 0;
+    objects.obj25 = 0;
+    objects.obj26 = 0;
+    deletePageFlowState(3);
 }
 
 void tick_screen_chapters() {
@@ -1141,6 +1193,22 @@ void create_screen_roadmap() {
     tick_screen_roadmap();
 }
 
+void delete_screen_roadmap() {
+    lv_obj_delete(objects.roadmap);
+    objects.roadmap = 0;
+    objects.obj1 = 0;
+    objects.level_point_1 = 0;
+    objects.level_point_2 = 0;
+    objects.level_point_3 = 0;
+    objects.level_point_4 = 0;
+    objects.level_point_5 = 0;
+    objects.level_point_6 = 0;
+    objects.level_point_7 = 0;
+    objects.level_point_8 = 0;
+    objects.obj27 = 0;
+    deletePageFlowState(4);
+}
+
 void tick_screen_roadmap() {
     void *flowState = getFlowState(0, 4);
     (void)flowState;
@@ -1212,6 +1280,16 @@ void create_screen_level1() {
     tick_screen_level1();
 }
 
+void delete_screen_level1() {
+    lv_obj_delete(objects.level1);
+    objects.level1 = 0;
+    objects.obj28 = 0;
+    objects.obj29 = 0;
+    objects.obj2 = 0;
+    objects.obj3 = 0;
+    deletePageFlowState(5);
+}
+
 void tick_screen_level1() {
     void *flowState = getFlowState(0, 5);
     (void)flowState;
@@ -1270,6 +1348,13 @@ void create_screen_level2() {
     }
     
     tick_screen_level2();
+}
+
+void delete_screen_level2() {
+    lv_obj_delete(objects.level2);
+    objects.level2 = 0;
+    objects.obj4 = 0;
+    deletePageFlowState(6);
 }
 
 void tick_screen_level2() {
@@ -1347,6 +1432,13 @@ void create_screen_testing_sensors() {
     tick_screen_testing_sensors();
 }
 
+void delete_screen_testing_sensors() {
+    lv_obj_delete(objects.testing_sensors);
+    objects.testing_sensors = 0;
+    objects.obj5 = 0;
+    deletePageFlowState(7);
+}
+
 void tick_screen_testing_sensors() {
     void *flowState = getFlowState(0, 7);
     (void)flowState;
@@ -1408,6 +1500,15 @@ void create_screen_profile_page() {
     }
     
     tick_screen_profile_page();
+}
+
+void delete_screen_profile_page() {
+    lv_obj_delete(objects.profile_page);
+    objects.profile_page = 0;
+    objects.obj6 = 0;
+    objects.shop_button = 0;
+    objects.user_selection = 0;
+    deletePageFlowState(8);
 }
 
 void tick_screen_profile_page() {
@@ -1640,6 +1741,27 @@ void create_screen_shop_page() {
     }
     
     tick_screen_shop_page();
+}
+
+void delete_screen_shop_page() {
+    lv_obj_delete(objects.shop_page);
+    objects.shop_page = 0;
+    objects.obj7 = 0;
+    objects.obj8 = 0;
+    objects.obj9 = 0;
+    objects.obj10 = 0;
+    objects.obj11 = 0;
+    objects.obj12 = 0;
+    objects.obj13 = 0;
+    objects.obj14 = 0;
+    objects.obj15 = 0;
+    objects.obj16 = 0;
+    objects.obj17 = 0;
+    objects.obj18 = 0;
+    objects.obj19 = 0;
+    objects.shop_overlay = 0;
+    objects.close_button = 0;
+    deletePageFlowState(9);
 }
 
 void tick_screen_shop_page() {
@@ -2009,6 +2131,46 @@ void tick_user_widget_shop_item(void *flowState, int startWidgetIndex) {
     }
 }
 
+typedef void (*create_screen_func_t)();
+create_screen_func_t create_screen_funcs[] = {
+    create_screen_home_page,
+    create_screen_user_list_view,
+    create_screen_user_creation,
+    create_screen_chapters,
+    create_screen_roadmap,
+    create_screen_level1,
+    create_screen_level2,
+    create_screen_testing_sensors,
+    create_screen_profile_page,
+    create_screen_shop_page,
+};
+void create_screen(int screen_index) {
+    create_screen_funcs[screen_index]();
+}
+void create_screen_by_id(enum ScreensEnum screenId) {
+    create_screen_funcs[screenId - 1]();
+}
+
+typedef void (*delete_screen_func_t)();
+delete_screen_func_t delete_screen_funcs[] = {
+    delete_screen_home_page,
+    delete_screen_user_list_view,
+    delete_screen_user_creation,
+    delete_screen_chapters,
+    delete_screen_roadmap,
+    delete_screen_level1,
+    delete_screen_level2,
+    delete_screen_testing_sensors,
+    delete_screen_profile_page,
+    delete_screen_shop_page,
+};
+void delete_screen(int screen_index) {
+    delete_screen_funcs[screen_index]();
+}
+void delete_screen_by_id(enum ScreensEnum screenId) {
+    delete_screen_funcs[screenId - 1]();
+}
+
 typedef void (*tick_screen_func_t)();
 tick_screen_func_t tick_screen_funcs[] = {
     tick_screen_home_page,
@@ -2117,6 +2279,9 @@ void create_screens() {
     // Initialize screens
     eez_flow_init_screen_names(screen_names, sizeof(screen_names) / sizeof(const char *));
     eez_flow_init_object_names(object_names, sizeof(object_names) / sizeof(const char *));
+    
+    eez_flow_set_create_screen_func(create_screen);
+    eez_flow_set_delete_screen_func(delete_screen);
     
     // Create screens
     create_screen_home_page();

@@ -14,13 +14,14 @@
       "displayWidth": 1024,
       "displayHeight": 600,
       "displayBorderRadius": 0,
-      "colorFormat": "BGR",
+      "colorBpp": "16",
+      "bitmapColorFormat": "BGR",
       "resourceFiles": [],
       "hiddenWidgetLines": "dimmed",
       "dimmedLinesOpacity": "20",
       "embedBitmaps": true,
       "embedFonts": true,
-      "cacheFonts": false
+      "cacheFonts": true
     },
     "build": {
       "objID": "72794a43-a0fc-13c2-7eb5-67dd952141a4",
@@ -98,9 +99,9 @@
       "fontExportMode": "source",
       "fileSystemPath": "",
       "lvglInclude": "lvgl.h",
-      "screensLifetimeSupport": false,
+      "screensLifetimeSupport": true,
       "useDockerDesktop": true,
-      "generateSourceCodeForEezFramework": false,
+      "generateSourceCodeForEezFramework": true,
       "compressFlowDefinition": false,
       "executionQueueSize": 1000,
       "expressionEvaluatorStackSize": 20
@@ -893,7 +894,8 @@
                   "text": "Your name",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 },
                 {
                   "objID": "4cb6eda4-3bea-4dd3-a190-73a9ea309af9",
@@ -947,7 +949,8 @@
                   "text": "Choose avatar",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "",
@@ -1616,7 +1619,8 @@
                   "text": "Cancel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICKABLE",
@@ -1738,7 +1742,8 @@
                   "text": "Confirm",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICKABLE",
@@ -3679,7 +3684,8 @@
                   "text": "solar panel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -3739,7 +3745,8 @@
               "text": "click here to see how much the \nsolar panel is producing right now!",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false
+              "recolor": false,
+              "useStaticText": true
             },
             {
               "objID": "6ffe199e-38a9-48cf-cbec-a69cd3736715",
@@ -3810,7 +3817,8 @@
                   "text": "solar panel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -3870,7 +3878,8 @@
               "text": "click here to see how much the \nsolar panel is producing right now!",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false
+              "recolor": false,
+              "useStaticText": true
             },
             {
               "objID": "d6f8921b-3431-48b3-f4f7-5f8f49db2fec",
@@ -5440,7 +5449,8 @@
                   "text": "currentCoins",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -5543,7 +5553,8 @@
                   "text": "title",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -5989,7 +6000,8 @@
               "text": "Level completed",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false
+              "recolor": false,
+              "useStaticText": true
             }
           ],
           "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -6259,7 +6271,8 @@
                   "text": "price",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false
+                  "recolor": false,
+                  "useStaticText": true
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",

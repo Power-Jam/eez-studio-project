@@ -3,7 +3,7 @@
 
 #include <lvgl.h>
 
-#include <eez/flow/lvgl_api.h>
+#include "eez-flow.h"
 
 #ifdef __cplusplus
 extern "C" {

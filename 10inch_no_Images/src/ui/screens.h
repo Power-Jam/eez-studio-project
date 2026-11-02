@@ -222,33 +222,43 @@ typedef struct _objects_t {
 extern objects_t objects;
 
 void create_screen_home_page();
+void delete_screen_home_page();
 void tick_screen_home_page();
 
 void create_screen_user_list_view();
+void delete_screen_user_list_view();
 void tick_screen_user_list_view();
 
 void create_screen_user_creation();
+void delete_screen_user_creation();
 void tick_screen_user_creation();
 
 void create_screen_chapters();
+void delete_screen_chapters();
 void tick_screen_chapters();
 
 void create_screen_roadmap();
+void delete_screen_roadmap();
 void tick_screen_roadmap();
 
 void create_screen_level1();
+void delete_screen_level1();
 void tick_screen_level1();
 
 void create_screen_level2();
+void delete_screen_level2();
 void tick_screen_level2();
 
 void create_screen_testing_sensors();
+void delete_screen_testing_sensors();
 void tick_screen_testing_sensors();
 
 void create_screen_profile_page();
+void delete_screen_profile_page();
 void tick_screen_profile_page();
 
 void create_screen_shop_page();
+void delete_screen_shop_page();
 void tick_screen_shop_page();
 
 void create_user_widget_nav_bar(lv_obj_t *parent_obj, void *flowState, int startWidgetIndex);
@@ -263,6 +273,8 @@ void tick_user_widget_complete_level_button(void *flowState, int startWidgetInde
 void create_user_widget_shop_item(lv_obj_t *parent_obj, void *flowState, int startWidgetIndex);
 void tick_user_widget_shop_item(void *flowState, int startWidgetIndex);
 
+void create_screen_by_id(enum ScreensEnum screenId);
+void delete_screen_by_id(enum ScreensEnum screenId);
 void tick_screen_by_id(enum ScreensEnum screenId);
 void tick_screen(int screen_index);
 

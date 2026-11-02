@@ -203,6 +203,18 @@
               "children": [
                 {
                   "type": "tab",
+                  "id": "#3b2d35e8-f577-4db6-b6dd-99e900908126",
+                  "name": "Settings",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[10inch_no_Images.eez-project]:/settings",
+                    "subObjectPath": "[10inch_no_Images.eez-project]:/settings",
+                    "permanent": false
+                  },
+                  "icon": "material:settings"
+                },
+                {
+                  "type": "tab",
                   "id": "#71399d6a-013c-409e-83ec-be29d3482702",
                   "name": "NavBar",
                   "component": "editor",

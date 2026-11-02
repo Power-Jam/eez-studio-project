@@ -1,5 +1,3 @@
-#include <eez/core/vars.h>
-
 #include "ui.h"
 #include "screens.h"
 #include "images.h"
