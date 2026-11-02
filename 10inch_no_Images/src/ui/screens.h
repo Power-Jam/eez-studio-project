@@ -194,9 +194,10 @@ typedef struct _objects_t {
     lv_obj_t *obj19__obj9;
     lv_obj_t *obj19__obj10;
     lv_obj_t *obj19__obj11;
-    lv_obj_t *background_homepage;
+    lv_obj_t *homepage_background;
     lv_obj_t *btn_start;
     lv_obj_t *btn_users;
+    lv_obj_t *user_list_background;
     lv_obj_t *add_user_button;
     lv_obj_t *obj20;
     lv_obj_t *obj21;
@@ -218,6 +219,7 @@ typedef struct _objects_t {
     lv_obj_t *action_user_creation_confirm_11;
     lv_obj_t *text_user_creation_4;
     lv_obj_t *obj22;
+    lv_obj_t *chapter_background;
     lv_obj_t *obj23;
     lv_obj_t *obj24;
     lv_obj_t *obj25;
