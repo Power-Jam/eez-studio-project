@@ -1,9 +1,8 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/4",
+    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/0",
     "selectedUserWidgetObject": "[10inch_no_Images.eez-project]:/userWidgets/1",
     "selectedActionObject": "[10inch_no_Images.eez-project]:/actions/2",
-    "selectedGlobalVariableObject": "[10inch_no_Images.eez-project]:/variables/globalVariables/-1",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Local"
     }
@@ -202,8 +201,7 @@
                       "enableClose": false,
                       "icon": "svg:variable"
                     }
-                  ],
-                  "active": true
+                  ]
                 }
               ]
             },
@@ -247,7 +245,8 @@
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "tabset",
@@ -1449,7 +1448,7 @@
   "searchMatchWholeWord": false,
   "replaceEnabled": false,
   "replaceText": "",
-  "pageRuntimeFrontFace": true,
+  "pageRuntimeFrontFace": false,
   "breakpoints": {},
   "watchExpressions": [],
   "showComponentDescriptions": true,

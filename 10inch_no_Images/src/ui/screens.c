@@ -28,18 +28,7 @@ static void event_handler_cb_home_page_home_page(lv_event_t *e) {
     
     if (event == LV_EVENT_SCREEN_LOAD_START) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, -1, 16, e);
-    }
-}
-
-static void event_handler_cb_home_page_homepage_background(lv_event_t *e) {
-    lv_event_code_t event = lv_event_get_code(e);
-    void *flowState = lv_event_get_user_data(e);
-    (void)flowState;
-    
-    if (event == LV_EVENT_SCREEN_LOADED) {
-        e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 0, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 1, 0, e);
     }
 }
 
@@ -65,14 +54,14 @@ static void event_handler_cb_home_page_btn_users(lv_event_t *e) {
     }
 }
 
-static void event_handler_cb_user_list_view_user_list_background(lv_event_t *e) {
+static void event_handler_cb_user_list_view_user_list_view(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
     (void)flowState;
     
-    if (event == LV_EVENT_SCREEN_LOADED) {
+    if (event == LV_EVENT_SCREEN_LOAD_START) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 0, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 1, 0, e);
     }
 }
 
@@ -120,14 +109,14 @@ static void event_handler_cb_user_creation_action_user_creation_confirm_11(lv_ev
     }
 }
 
-static void event_handler_cb_chapters_chapter_background(lv_event_t *e) {
+static void event_handler_cb_chapters_chapters(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
     (void)flowState;
     
     if (event == LV_EVENT_SCREEN_LOAD_START) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 0, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 1, 0, e);
     }
 }
 
@@ -376,7 +365,6 @@ void create_screen_home_page() {
             objects.homepage_background = obj;
             lv_obj_set_pos(obj, 0, 0);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_obj_add_event_cb(obj, event_handler_cb_home_page_homepage_background, LV_EVENT_ALL, flowState);
         }
         {
             // Btn_start
@@ -434,6 +422,7 @@ void create_screen_user_list_view() {
     objects.user_list_view = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 1024, 600);
+    lv_obj_add_event_cb(obj, event_handler_cb_user_list_view_user_list_view, LV_EVENT_ALL, flowState);
     lv_obj_set_style_bg_color(obj, lv_color_hex(0xfaf7ef), LV_PART_MAIN | LV_STATE_DEFAULT);
     {
         lv_obj_t *parent_obj = obj;
@@ -443,7 +432,6 @@ void create_screen_user_list_view() {
             objects.user_list_background = obj;
             lv_obj_set_pos(obj, 0, 0);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_obj_add_event_cb(obj, event_handler_cb_user_list_view_user_list_background, LV_EVENT_ALL, flowState);
         }
         {
             // add_user_button
@@ -962,6 +950,7 @@ void create_screen_chapters() {
     objects.chapters = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 1024, 600);
+    lv_obj_add_event_cb(obj, event_handler_cb_chapters_chapters, LV_EVENT_ALL, flowState);
     {
         lv_obj_t *parent_obj = obj;
         {
@@ -970,7 +959,6 @@ void create_screen_chapters() {
             objects.chapter_background = obj;
             lv_obj_set_pos(obj, 0, 0);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_obj_add_event_cb(obj, event_handler_cb_chapters_chapter_background, LV_EVENT_ALL, flowState);
         }
         {
             lv_obj_t *obj = lv_obj_create(parent_obj);
