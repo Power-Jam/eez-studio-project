@@ -213,6 +213,7 @@ typedef struct _objects_t {
     lv_obj_t *obj27;
     lv_obj_t *obj28;
     lv_obj_t *obj29;
+    lv_obj_t *obj30;
     lv_obj_t *shop_button;
     lv_obj_t *user_selection;
     lv_obj_t *shop_overlay;
