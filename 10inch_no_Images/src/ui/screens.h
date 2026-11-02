@@ -36,6 +36,7 @@ typedef struct _objects_t {
     lv_obj_t *profile_page;
     lv_obj_t *shop_page;
     lv_obj_t *obj0;
+    lv_obj_t *obj0__nav_bar;
     lv_obj_t *obj0__obj0;
     lv_obj_t *obj0__back_button;
     lv_obj_t *obj0__listen_button;
@@ -45,8 +46,8 @@ typedef struct _objects_t {
     lv_obj_t *obj0__obj3;
     lv_obj_t *obj0__obj4;
     lv_obj_t *obj0__obj5;
-    lv_obj_t *obj0__nav_bar;
     lv_obj_t *obj1;
+    lv_obj_t *obj1__nav_bar;
     lv_obj_t *obj1__obj0;
     lv_obj_t *obj1__back_button;
     lv_obj_t *obj1__listen_button;
@@ -56,7 +57,6 @@ typedef struct _objects_t {
     lv_obj_t *obj1__obj3;
     lv_obj_t *obj1__obj4;
     lv_obj_t *obj1__obj5;
-    lv_obj_t *obj1__nav_bar;
     lv_obj_t *level_point_1;
     lv_obj_t *level_point_1__obj6;
     lv_obj_t *level_point_1__level;
@@ -125,6 +125,7 @@ typedef struct _objects_t {
     lv_obj_t *obj2__lvl1_complete_level_button;
     lv_obj_t *obj2__obj7;
     lv_obj_t *obj3;
+    lv_obj_t *obj3__nav_bar;
     lv_obj_t *obj3__obj0;
     lv_obj_t *obj3__back_button;
     lv_obj_t *obj3__listen_button;
@@ -134,7 +135,6 @@ typedef struct _objects_t {
     lv_obj_t *obj3__obj3;
     lv_obj_t *obj3__obj4;
     lv_obj_t *obj3__obj5;
-    lv_obj_t *obj3__nav_bar;
     lv_obj_t *obj4;
     lv_obj_t *obj4__lvl1_complete_level_button;
     lv_obj_t *obj4__obj7;
@@ -142,6 +142,7 @@ typedef struct _objects_t {
     lv_obj_t *obj5__lvl1_complete_level_button;
     lv_obj_t *obj5__obj7;
     lv_obj_t *obj6;
+    lv_obj_t *obj6__nav_bar;
     lv_obj_t *obj6__obj0;
     lv_obj_t *obj6__back_button;
     lv_obj_t *obj6__listen_button;
@@ -151,8 +152,8 @@ typedef struct _objects_t {
     lv_obj_t *obj6__obj3;
     lv_obj_t *obj6__obj4;
     lv_obj_t *obj6__obj5;
-    lv_obj_t *obj6__nav_bar;
     lv_obj_t *obj7;
+    lv_obj_t *obj7__nav_bar;
     lv_obj_t *obj7__obj0;
     lv_obj_t *obj7__back_button;
     lv_obj_t *obj7__listen_button;
@@ -162,7 +163,6 @@ typedef struct _objects_t {
     lv_obj_t *obj7__obj3;
     lv_obj_t *obj7__obj4;
     lv_obj_t *obj7__obj5;
-    lv_obj_t *obj7__nav_bar;
     lv_obj_t *obj8;
     lv_obj_t *obj8__obj8;
     lv_obj_t *obj8__obj9;
