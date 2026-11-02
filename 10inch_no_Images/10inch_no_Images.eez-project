@@ -150,6 +150,14 @@
         "type": "boolean",
         "defaultValue": "false",
         "persistent": false
+      },
+      {
+        "objID": "a1801982-a388-4b1e-c46c-8fc6efb7a61d",
+        "name": "currentPanel",
+        "description": "this is for level1 to make sure the panel flow works",
+        "type": "integer",
+        "defaultValue": "0",
+        "persistent": false
       }
     ],
     "structures": [],
@@ -165,6 +173,146 @@
       "userProperties": [],
       "name": "ChangeScreen",
       "implementationType": "native"
+    },
+    {
+      "objID": "e2ad4581-5607-43f8-cb36-4132c3d3177e",
+      "components": [
+        {
+          "objID": "43078a73-a56e-4de6-86ef-5b7762c25246",
+          "type": "StartActionComponent",
+          "left": -87,
+          "top": -24,
+          "width": 87,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": []
+        },
+        {
+          "objID": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
+          "type": "CompareActionComponent",
+          "left": 52,
+          "top": -24,
+          "width": 155,
+          "height": 71,
+          "customInputs": [],
+          "customOutputs": [],
+          "A": "currentPanel",
+          "B": "2",
+          "operator": "<"
+        },
+        {
+          "objID": "097c99db-6208-44ff-cda3-81e4d87b2b30",
+          "type": "SetVariableActionComponent",
+          "left": 269,
+          "top": 63,
+          "width": 238,
+          "height": 57,
+          "customInputs": [],
+          "customOutputs": [],
+          "entries": [
+            {
+              "objID": "a812240b-c7ee-466d-9f91-80ebbc3f120c",
+              "variable": "currentPanel",
+              "value": "currentPanel + 1"
+            }
+          ]
+        },
+        {
+          "objID": "b1c1dd19-7c20-4fa7-e04f-e9e55ec5f5dd",
+          "type": "LVGLActionComponent",
+          "left": 541,
+          "top": 159,
+          "width": 304,
+          "height": 53,
+          "customInputs": [],
+          "customOutputs": [],
+          "actions": [
+            {
+              "objID": "7dbd2620-634b-44cd-c1d9-baf4bfacacf7",
+              "action": "changeScreen",
+              "screen": "Roadmap",
+              "screenType": "literal",
+              "fadeMode": "FADE_IN",
+              "fadeModeType": "literal",
+              "speed": 200,
+              "speedType": "literal",
+              "delay": 0,
+              "delayType": "literal",
+              "useStack": true,
+              "useStackType": "literal"
+            }
+          ]
+        },
+        {
+          "objID": "d3138f3b-19bc-473a-93f0-91cace5fb079",
+          "type": "EndActionComponent",
+          "left": 677,
+          "top": -24,
+          "width": 87,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": []
+        },
+        {
+          "objID": "cca23560-be8d-4557-f276-c739e3ebbcb1",
+          "type": "SetVariableActionComponent",
+          "left": 249,
+          "top": 159,
+          "width": 244,
+          "height": 57,
+          "customInputs": [],
+          "customOutputs": [],
+          "entries": [
+            {
+              "objID": "c641f404-2459-45f2-b056-13a47714f6fa",
+              "variable": "currentCoins",
+              "value": "currentCoins + 10"
+            }
+          ]
+        }
+      ],
+      "connectionLines": [
+        {
+          "objID": "2ed3283a-4309-4d1e-f8c3-36cca4d01713",
+          "source": "43078a73-a56e-4de6-86ef-5b7762c25246",
+          "output": "@seqout",
+          "target": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
+          "input": "@seqin"
+        },
+        {
+          "objID": "31df3044-052d-4012-d8bf-5901b5c4b104",
+          "source": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
+          "output": "True",
+          "target": "097c99db-6208-44ff-cda3-81e4d87b2b30",
+          "input": "@seqin"
+        },
+        {
+          "objID": "0999177b-d4aa-4f74-f661-25bab63d6127",
+          "source": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
+          "output": "@seqout",
+          "target": "d3138f3b-19bc-473a-93f0-91cace5fb079",
+          "input": "@seqin"
+        },
+        {
+          "objID": "fcba3842-d110-49ca-d5e0-2b40932e1afd",
+          "source": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
+          "output": "False",
+          "target": "cca23560-be8d-4557-f276-c739e3ebbcb1",
+          "input": "@seqin"
+        },
+        {
+          "objID": "3f3148d5-f357-4bc5-e05e-ef426d6f0c3a",
+          "source": "cca23560-be8d-4557-f276-c739e3ebbcb1",
+          "output": "@seqout",
+          "target": "b1c1dd19-7c20-4fa7-e04f-e9e55ec5f5dd",
+          "input": "@seqin"
+        }
+      ],
+      "localVariables": [],
+      "componentGroups": [],
+      "userProperties": [],
+      "name": "onCompleteClick",
+      "implementationType": "flow"
     }
   ],
   "userPages": [
@@ -3232,6 +3380,23 @@
               "useStackType": "literal"
             }
           ]
+        },
+        {
+          "objID": "c4f06509-7af2-4afa-8201-9c598dd9e7f1",
+          "type": "SetVariableActionComponent",
+          "left": -195,
+          "top": -58,
+          "width": 146,
+          "height": 57,
+          "customInputs": [],
+          "customOutputs": [],
+          "entries": [
+            {
+              "objID": "76a32e5d-0caf-421c-8ec8-2c40f4d6c1ae",
+              "variable": "currentPanel",
+              "value": "0"
+            }
+          ]
         }
       ],
       "connectionLines": [
@@ -3297,6 +3462,13 @@
           "output": "CLICKED",
           "target": "cd60e9ef-df47-4765-d8ca-2d07826433dc",
           "input": "@seqin"
+        },
+        {
+          "objID": "8a191e52-e76e-4926-eac8-88f4879497de",
+          "source": "c7ded038-04f7-4d25-d4e2-60785319bea5",
+          "output": "CLICKED",
+          "target": "c4f06509-7af2-4afa-8201-9c598dd9e7f1",
+          "input": "@seqin"
         }
       ],
       "localVariables": [],
@@ -3360,8 +3532,8 @@
               "heightUnit": "px",
               "children": [],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-              "hiddenFlag": false,
-              "hiddenFlagType": "literal",
+              "hiddenFlag": "currentPanel != 0",
+              "hiddenFlagType": "expression",
               "clickableFlag": true,
               "clickableFlagType": "literal",
               "flagScrollbarMode": "",
@@ -3401,7 +3573,7 @@
               "heightUnit": "px",
               "children": [],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-              "hiddenFlag": "!rightTag",
+              "hiddenFlag": "currentPanel != 1",
               "hiddenFlagType": "expression",
               "clickableFlag": true,
               "clickableFlagType": "literal",
@@ -3413,7 +3585,15 @@
               "disabledStateType": "literal",
               "states": "",
               "localStyles": {
-                "objID": "62bfc207-d512-450e-cbf9-e42f476d9763"
+                "objID": "62bfc207-d512-450e-cbf9-e42f476d9763",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "bg_color": "#FFC3C3",
+                      "bg_opa": 255
+                    }
+                  }
+                }
               },
               "group": "",
               "groupIndex": 0
@@ -3442,7 +3622,7 @@
               "heightUnit": "px",
               "children": [],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-              "hiddenFlag": "!rightTag",
+              "hiddenFlag": "currentPanel != 2",
               "hiddenFlagType": "expression",
               "clickableFlag": true,
               "clickableFlagType": "literal",
@@ -3454,7 +3634,15 @@
               "disabledStateType": "literal",
               "states": "",
               "localStyles": {
-                "objID": "bf9568a1-aa04-4fe1-a4a8-cc9ab3065fd6"
+                "objID": "bf9568a1-aa04-4fe1-a4a8-cc9ab3065fd6",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "bg_color": "#841515",
+                      "bg_opa": 255
+                    }
+                  }
+                }
               },
               "group": "",
               "groupIndex": 0
@@ -6042,8 +6230,8 @@
             {
               "objID": "23592427-2390-4c77-f3f5-5bfda2be7d74",
               "eventName": "CLICKED",
-              "handlerType": "flow",
-              "action": "ChangeScreen",
+              "handlerType": "action",
+              "action": "onCompleteClick",
               "userData": 0
             }
           ],
@@ -6057,7 +6245,7 @@
               "type": "LVGLLabelWidget",
               "left": 0,
               "top": 0,
-              "width": 121,
+              "width": 335,
               "height": 16,
               "customInputs": [],
               "customOutputs": [],
@@ -6096,8 +6284,8 @@
               },
               "group": "",
               "groupIndex": 0,
-              "text": "Level completed",
-              "textType": "literal",
+              "text": "currentPanel == 2 ? \"Complete Level\" : \"Next\"",
+              "textType": "expression",
               "longMode": "WRAP",
               "recolor": false
             }
@@ -6118,91 +6306,9 @@
           },
           "group": "",
           "groupIndex": 0
-        },
-        {
-          "objID": "dfdfbef8-0993-461d-dccf-9d61cafb7554",
-          "type": "LVGLActionComponent",
-          "left": 213,
-          "top": 13,
-          "width": 304,
-          "height": 53,
-          "customInputs": [],
-          "customOutputs": [],
-          "actions": [
-            {
-              "objID": "29300db5-67a0-4ef1-93ad-9bc8e2827b9b",
-              "action": "changeScreen",
-              "screen": "Roadmap",
-              "screenType": "literal",
-              "fadeMode": "FADE_IN",
-              "fadeModeType": "literal",
-              "speed": 200,
-              "speedType": "literal",
-              "delay": 0,
-              "delayType": "literal",
-              "useStack": true,
-              "useStackType": "literal"
-            }
-          ]
-        },
-        {
-          "objID": "54a93f82-b003-4c06-a434-f0b277fce9a4",
-          "type": "SetVariableActionComponent",
-          "left": 214,
-          "top": 85,
-          "width": 238,
-          "height": 57,
-          "customInputs": [],
-          "customOutputs": [],
-          "entries": [
-            {
-              "objID": "5a8d364c-f33a-4241-9159-3f24f4012f05",
-              "variable": "currentLevel",
-              "value": "currentLevel + 1"
-            }
-          ]
-        },
-        {
-          "objID": "66055470-6dc6-47fc-9d45-61b7f0db3f8f",
-          "type": "SetVariableActionComponent",
-          "left": 218,
-          "top": 173,
-          "width": 244,
-          "height": 57,
-          "customInputs": [],
-          "customOutputs": [],
-          "entries": [
-            {
-              "objID": "251b6cc6-d3d7-4eda-a8e3-88f60c860f5a",
-              "variable": "currentCoins",
-              "value": "currentCoins + 10"
-            }
-          ]
         }
       ],
-      "connectionLines": [
-        {
-          "objID": "34411918-c134-498c-d163-3e915f7d8a32",
-          "source": "8c66af41-5a52-464b-e4bc-df4b80f07faa",
-          "output": "CLICKED",
-          "target": "dfdfbef8-0993-461d-dccf-9d61cafb7554",
-          "input": "@seqin"
-        },
-        {
-          "objID": "82cd9bc6-0f25-48a4-af2f-52a3089ea2d2",
-          "source": "8c66af41-5a52-464b-e4bc-df4b80f07faa",
-          "output": "CLICKED",
-          "target": "54a93f82-b003-4c06-a434-f0b277fce9a4",
-          "input": "@seqin"
-        },
-        {
-          "objID": "c237395b-d446-4eea-af4d-e8d1033b9226",
-          "source": "8c66af41-5a52-464b-e4bc-df4b80f07faa",
-          "output": "CLICKED",
-          "target": "66055470-6dc6-47fc-9d45-61b7f0db3f8f",
-          "input": "@seqin"
-        }
-      ],
+      "connectionLines": [],
       "localVariables": [],
       "componentGroups": [],
       "userProperties": [],
