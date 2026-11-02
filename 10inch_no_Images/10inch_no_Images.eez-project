@@ -180,7 +180,7 @@
         {
           "objID": "43078a73-a56e-4de6-86ef-5b7762c25246",
           "type": "StartActionComponent",
-          "left": -87,
+          "left": -202,
           "top": -24,
           "width": 87,
           "height": 24,
@@ -259,7 +259,7 @@
           "left": 249,
           "top": 159,
           "width": 244,
-          "height": 57,
+          "height": 78,
           "customInputs": [],
           "customOutputs": [],
           "entries": [
@@ -267,18 +267,16 @@
               "objID": "c641f404-2459-45f2-b056-13a47714f6fa",
               "variable": "currentCoins",
               "value": "currentCoins + 10"
+            },
+            {
+              "objID": "4151d1b5-d001-47b6-f73c-a7e5bffda8dd",
+              "variable": "currentPanel",
+              "value": "0"
             }
           ]
         }
       ],
       "connectionLines": [
-        {
-          "objID": "2ed3283a-4309-4d1e-f8c3-36cca4d01713",
-          "source": "43078a73-a56e-4de6-86ef-5b7762c25246",
-          "output": "@seqout",
-          "target": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
-          "input": "@seqin"
-        },
         {
           "objID": "31df3044-052d-4012-d8bf-5901b5c4b104",
           "source": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
@@ -305,6 +303,13 @@
           "source": "cca23560-be8d-4557-f276-c739e3ebbcb1",
           "output": "@seqout",
           "target": "b1c1dd19-7c20-4fa7-e04f-e9e55ec5f5dd",
+          "input": "@seqin"
+        },
+        {
+          "objID": "2aeb65f4-a5fd-4551-ad24-5cbbfcd094b2",
+          "source": "43078a73-a56e-4de6-86ef-5b7762c25246",
+          "output": "@seqout",
+          "target": "dc271c75-fecb-4838-c42b-c830d9e0eab1",
           "input": "@seqin"
         }
       ],
@@ -3380,23 +3385,6 @@
               "useStackType": "literal"
             }
           ]
-        },
-        {
-          "objID": "c4f06509-7af2-4afa-8201-9c598dd9e7f1",
-          "type": "SetVariableActionComponent",
-          "left": -195,
-          "top": -58,
-          "width": 146,
-          "height": 57,
-          "customInputs": [],
-          "customOutputs": [],
-          "entries": [
-            {
-              "objID": "76a32e5d-0caf-421c-8ec8-2c40f4d6c1ae",
-              "variable": "currentPanel",
-              "value": "0"
-            }
-          ]
         }
       ],
       "connectionLines": [
@@ -3461,13 +3449,6 @@
           "source": "390f361c-c44c-4388-d89e-eb28d447e3e9",
           "output": "CLICKED",
           "target": "cd60e9ef-df47-4765-d8ca-2d07826433dc",
-          "input": "@seqin"
-        },
-        {
-          "objID": "8a191e52-e76e-4926-eac8-88f4879497de",
-          "source": "c7ded038-04f7-4d25-d4e2-60785319bea5",
-          "output": "CLICKED",
-          "target": "c4f06509-7af2-4afa-8201-9c598dd9e7f1",
           "input": "@seqin"
         }
       ],
@@ -3665,6 +3646,7 @@
               "hiddenInEditor": false,
               "timeline": [],
               "eventHandlers": [],
+              "identifier": "",
               "leftUnit": "px",
               "topUnit": "px",
               "widthUnit": "px",
@@ -6228,6 +6210,13 @@
           "timeline": [],
           "eventHandlers": [
             {
+              "objID": "fa266b0e-77d0-4bdb-8e74-07b5d2a86f04",
+              "eventName": "SINGLE_CLICKED",
+              "handlerType": "flow",
+              "action": "ChangeScreen",
+              "userData": 0
+            },
+            {
               "objID": "23592427-2390-4c77-f3f5-5bfda2be7d74",
               "eventName": "CLICKED",
               "handlerType": "action",
@@ -6235,6 +6224,7 @@
               "userData": 0
             }
           ],
+          "identifier": "lvl1_complete_level_button",
           "leftUnit": "px",
           "topUnit": "px",
           "widthUnit": "px",
@@ -6306,9 +6296,49 @@
           },
           "group": "",
           "groupIndex": 0
+        },
+        {
+          "objID": "7dac670d-fcb3-48f1-8687-9aca71ccb3bd",
+          "type": "LVGLActionComponent",
+          "left": 223,
+          "top": -3,
+          "width": 581,
+          "height": 53,
+          "customInputs": [],
+          "customOutputs": [],
+          "actions": [
+            {
+              "objID": "45b8b5d2-53fb-43be-a1ae-62cc7dd0a505",
+              "action": "animOpacity",
+              "object": "lvl1_complete_level_button",
+              "objectType": "literal",
+              "start": 0,
+              "startType": "literal",
+              "end": 255,
+              "endType": "literal",
+              "delay": 1000,
+              "delayType": "literal",
+              "time": 300,
+              "timeType": "literal",
+              "relative": false,
+              "relativeType": "literal",
+              "instant": true,
+              "instantType": "literal",
+              "path": "EASE_OUT",
+              "pathType": "literal"
+            }
+          ]
         }
       ],
-      "connectionLines": [],
+      "connectionLines": [
+        {
+          "objID": "4264f1bb-84f1-4a97-8451-bc53d534d530",
+          "source": "8c66af41-5a52-464b-e4bc-df4b80f07faa",
+          "output": "SINGLE_CLICKED",
+          "target": "7dac670d-fcb3-48f1-8687-9aca71ccb3bd",
+          "input": "@seqin"
+        }
+      ],
       "localVariables": [],
       "componentGroups": [],
       "userProperties": [],
