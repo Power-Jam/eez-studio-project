@@ -1,7 +1,6 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Test_10inch.eez-project]:/userPages/5",
-    "selectedUserWidgetObject": "[Test_10inch.eez-project]:/userWidgets/-1",
+    "selectedUserPageObject": "[Test_10inch.eez-project]:/userPages/9",
     "selectedGlobalVariableObject": "[Test_10inch.eez-project]:/variables/globalVariables/5",
     "selectedBitmapObject": "[Test_10inch.eez-project]:/bitmaps/16",
     "subnavigationSelectedItems": {
@@ -206,21 +205,35 @@
                   "type": "tabset",
                   "id": "EDITORS",
                   "weight": 72.48322147651007,
+                  "selected": 1,
                   "enableDeleteWhenEmpty": false,
                   "enableClose": false,
                   "children": [
                     {
                       "type": "tab",
-                      "id": "#a6464c72-be8f-4810-bd64-c38804a40d86",
-                      "name": "Level1",
+                      "id": "#aaec265a-b93c-4495-bbeb-c9d8ed500501",
+                      "name": "Settings",
                       "component": "editor",
                       "config": {
-                        "objectPath": "[Test_10inch.eez-project]:/userPages/5",
+                        "objectPath": "[Test_10inch.eez-project]:/settings",
+                        "subObjectPath": "[Test_10inch.eez-project]:/settings",
+                        "permanent": false
+                      },
+                      "icon": "material:settings"
+                    },
+                    {
+                      "type": "tab",
+                      "id": "#a6464c72-be8f-4810-bd64-c38804a40d86",
+                      "name": "ShopPage",
+                      "component": "editor",
+                      "config": {
+                        "objectPath": "[Test_10inch.eez-project]:/userPages/9",
                         "permanent": false
                       },
                       "icon": "svg:page"
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -252,8 +265,7 @@
                   "enableClose": false,
                   "icon": "svg:properties"
                 }
-              ],
-              "active": true
+              ]
             }
           ]
         }
@@ -1092,7 +1104,7 @@
           "x": -284.0443573282108,
           "y": -146.97159178622974
         },
-        "scale": 0.33
+        "scale": 0.5
       },
       "timeline": {
         "isEditorActive": false,
@@ -1152,9 +1164,18 @@
       "selectionFront": {},
       "selectionBack": {
         "0": {
-          "1": {},
-          "2": {},
-          "3": {}
+          "1": {
+            "$selected": true
+          },
+          "2": {
+            "$selected": true
+          },
+          "3": {
+            "$selected": true
+          },
+          "4": {
+            "$selected": true
+          }
         }
       },
       "transform": {
@@ -1203,11 +1224,12 @@
       "selectionBack": {
         "0": {
           "1": {},
-          "4": {}
+          "4": {},
+          "10": {
+            "$selected": true
+          }
         },
-        "9": {
-          "$selected": true
-        }
+        "9": {}
       },
       "transform": {
         "translate": {

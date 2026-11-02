@@ -14,8 +14,7 @@
       "displayWidth": 1024,
       "displayHeight": 600,
       "displayBorderRadius": 0,
-      "colorBpp": "16",
-      "bitmapColorFormat": "BGR",
+      "colorFormat": "BGR",
       "resourceFiles": [],
       "hiddenWidgetLines": "dimmed",
       "dimmedLinesOpacity": "20",
@@ -894,8 +893,7 @@
                   "text": "Your name",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 },
                 {
                   "objID": "4cb6eda4-3bea-4dd3-a190-73a9ea309af9",
@@ -949,8 +947,7 @@
                   "text": "Choose avatar",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "",
@@ -1619,8 +1616,7 @@
                   "text": "Cancel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICKABLE",
@@ -1742,8 +1738,7 @@
                   "text": "Confirm",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICKABLE",
@@ -2360,7 +2355,7 @@
               "left": 0,
               "top": 0,
               "width": 1024,
-              "height": 600,
+              "height": 75,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -3684,8 +3679,7 @@
                   "text": "solar panel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -3745,8 +3739,7 @@
               "text": "click here to see how much the \nsolar panel is producing right now!",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false,
-              "useStaticText": true
+              "recolor": false
             },
             {
               "objID": "6ffe199e-38a9-48cf-cbec-a69cd3736715",
@@ -3817,8 +3810,7 @@
                   "text": "solar panel",
                   "textType": "literal",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -3878,8 +3870,7 @@
               "text": "click here to see how much the \nsolar panel is producing right now!",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false,
-              "useStaticText": true
+              "recolor": false
             },
             {
               "objID": "d6f8921b-3431-48b3-f4f7-5f8f49db2fec",
@@ -5449,8 +5440,7 @@
                   "text": "currentCoins",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -5553,8 +5543,7 @@
                   "text": "title",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -5775,10 +5764,10 @@
         {
           "objID": "22104138-3fd9-4e04-d93f-7e054d5fcb19",
           "type": "LVGLPanelWidget",
-          "left": 0,
-          "top": 0,
-          "width": 200,
-          "height": 200,
+          "left": 2,
+          "top": 2,
+          "width": 80,
+          "height": 80,
           "customInputs": [],
           "customOutputs": [],
           "style": {
@@ -5808,7 +5797,15 @@
           "disabledStateType": "literal",
           "states": "",
           "localStyles": {
-            "objID": "561f85f3-2231-47c5-8b9a-284b128192f4"
+            "objID": "561f85f3-2231-47c5-8b9a-284b128192f4",
+            "definition": {
+              "MAIN": {
+                "DEFAULT": {
+                  "outline_width": 1,
+                  "outline_color": "#000000"
+                }
+              }
+            }
           },
           "group": "",
           "groupIndex": 0
@@ -5816,10 +5813,10 @@
         {
           "objID": "56dc634d-ed98-40f0-e27f-0d9e73d887fd",
           "type": "LVGLPanelWidget",
-          "left": 0,
-          "top": 0,
-          "width": 200,
-          "height": 200,
+          "left": 2,
+          "top": 2,
+          "width": 80,
+          "height": 80,
           "customInputs": [],
           "customOutputs": [],
           "style": {
@@ -5850,7 +5847,15 @@
           "disabledStateType": "literal",
           "states": "",
           "localStyles": {
-            "objID": "f5cc6a13-06fa-45b7-8fc3-ea775ea498ef"
+            "objID": "f5cc6a13-06fa-45b7-8fc3-ea775ea498ef",
+            "definition": {
+              "MAIN": {
+                "DEFAULT": {
+                  "outline_color": "#000000",
+                  "outline_width": 1
+                }
+              }
+            }
           },
           "group": "",
           "groupIndex": 0
@@ -5858,10 +5863,10 @@
         {
           "objID": "7e6c6df8-6d32-4d6a-9e86-1078e19e5f71",
           "type": "LVGLPanelWidget",
-          "left": 0,
-          "top": 0,
-          "width": 200,
-          "height": 200,
+          "left": 2,
+          "top": 2,
+          "width": 80,
+          "height": 80,
           "customInputs": [],
           "customOutputs": [],
           "style": {
@@ -5892,7 +5897,15 @@
           "disabledStateType": "literal",
           "states": "",
           "localStyles": {
-            "objID": "dd7482a7-2999-45c2-d502-bfdd531a40f9"
+            "objID": "dd7482a7-2999-45c2-d502-bfdd531a40f9",
+            "definition": {
+              "MAIN": {
+                "DEFAULT": {
+                  "outline_color": "#000000",
+                  "outline_width": 1
+                }
+              }
+            }
           },
           "group": "",
           "groupIndex": 0
@@ -6000,8 +6013,7 @@
               "text": "Level completed",
               "textType": "literal",
               "longMode": "WRAP",
-              "recolor": false,
-              "useStaticText": true
+              "recolor": false
             }
           ],
           "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
@@ -6271,8 +6283,7 @@
                   "text": "price",
                   "textType": "expression",
                   "longMode": "WRAP",
-                  "recolor": false,
-                  "useStaticText": true
+                  "recolor": false
                 }
               ],
               "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
