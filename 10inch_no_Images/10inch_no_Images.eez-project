@@ -2334,7 +2334,7 @@
               "left": 0,
               "top": 0,
               "width": 1024,
-              "height": 65,
+              "height": 66,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -3626,7 +3626,7 @@
               "left": 0,
               "top": 0,
               "width": 1024,
-              "height": 65,
+              "height": 66,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -4227,7 +4227,7 @@
               "left": 0,
               "top": 0,
               "width": 1024,
-              "height": 65,
+              "height": 66,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -4568,7 +4568,7 @@
               "left": 0,
               "top": 0,
               "width": 1024,
-              "height": 65,
+              "height": 66,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -5560,7 +5560,7 @@
                       "outline_width": 1,
                       "outline_color": "#000000"
                     },
-                    "CHECKED|PRESSED": {
+                    "PRESSED": {
                       "bg_color": "#000000",
                       "bg_opa": 50
                     }
@@ -5573,10 +5573,10 @@
             {
               "objID": "11e5b989-586b-4f68-9d02-787b1358f49e",
               "type": "LVGLButtonWidget",
-              "left": 670,
-              "top": 11,
-              "width": 90,
-              "height": 40,
+              "left": 726,
+              "top": 12,
+              "width": 81,
+              "height": 42,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -5624,7 +5624,7 @@
                       "outline_width": 1,
                       "outline_color": "#000000"
                     },
-                    "CHECKED|PRESSED": {
+                    "PRESSED": {
                       "bg_opa": 50,
                       "bg_color": "#000000"
                     }
@@ -5637,10 +5637,10 @@
             {
               "objID": "0bbf6b54-0e80-4df1-fc0c-5ca44a05c3ca",
               "type": "LVGLButtonWidget",
-              "left": 777,
-              "top": 10,
-              "width": 104,
-              "height": 38,
+              "left": 824,
+              "top": 12,
+              "width": 106,
+              "height": 41,
               "customInputs": [],
               "customOutputs": [],
               "style": {
@@ -5688,7 +5688,7 @@
                       "outline_width": 1,
                       "outline_color": "#000000"
                     },
-                    "CHECKED|PRESSED": {
+                    "PRESSED": {
                       "bg_color": "#000000",
                       "bg_opa": 50
                     }
@@ -5701,9 +5701,9 @@
             {
               "objID": "dbb09c9b-536e-443a-cc34-24545e622970",
               "type": "LVGLButtonWidget",
-              "left": 893,
+              "left": 944,
               "top": 6,
-              "width": 49,
+              "width": 56,
               "height": 49,
               "customInputs": [],
               "customOutputs": [],
@@ -5752,7 +5752,7 @@
                       "outline_width": 1,
                       "outline_color": "#000000"
                     },
-                    "CHECKED|PRESSED": {
+                    "PRESSED": {
                       "bg_color": "#000000",
                       "bg_opa": 50
                     }
@@ -5765,9 +5765,9 @@
             {
               "objID": "0a919afa-1d5a-42a2-a077-2ec6d513bd9d",
               "type": "LVGLButtonWidget",
-              "left": 953,
+              "left": 640,
               "top": 13,
-              "width": 56,
+              "width": 80,
               "height": 35,
               "customInputs": [],
               "customOutputs": [],
@@ -5865,6 +5865,10 @@
                       "shadow_opa": 0,
                       "outline_width": 1,
                       "outline_color": "#000000"
+                    },
+                    "PRESSED": {
+                      "bg_color": "#000000",
+                      "bg_opa": 50
                     }
                   }
                 }
