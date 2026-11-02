@@ -1,11 +1,11 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/5",
-    "selectedUserWidgetObject": "[10inch_no_Images.eez-project]:/userWidgets/2",
-    "selectedActionObject": "[10inch_no_Images.eez-project]:/actions/1",
-    "selectedGlobalVariableObject": "[10inch_no_Images.eez-project]:/variables/globalVariables/6",
+    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/4",
+    "selectedUserWidgetObject": "[10inch_no_Images.eez-project]:/userWidgets/1",
+    "selectedActionObject": "[10inch_no_Images.eez-project]:/actions/2",
+    "selectedGlobalVariableObject": "[10inch_no_Images.eez-project]:/variables/globalVariables/-1",
     "subnavigationSelectedItems": {
-      "variables-tab/sub-navigation/selected-item": "Global"
+      "variables-tab/sub-navigation/selected-item": "Local"
     }
   },
   "layoutModel": {
@@ -82,8 +82,8 @@
           },
           {
             "type": "border",
-            "selected": 0,
-            "size": 97.09375,
+            "selected": 1,
+            "size": 163.09375,
             "location": "bottom",
             "children": [
               {
@@ -143,7 +143,7 @@
                 {
                   "type": "tabset",
                   "id": "#65ba565e-2842-457d-95d2-c69fed28e6c2",
-                  "weight": 0.7020211207348607,
+                  "weight": 0.6056628839247937,
                   "selected": 2,
                   "enableClose": false,
                   "children": [
@@ -176,7 +176,7 @@
                 {
                   "type": "tabset",
                   "id": "#4e84e351-f22b-4808-ae48-d005cd2ecb19",
-                  "weight": 0.6067040087216655,
+                  "weight": 0.5569313875170516,
                   "children": [
                     {
                       "type": "tab",
@@ -191,7 +191,7 @@
                 {
                   "type": "tabset",
                   "id": "#d07bb044-f378-40b7-8152-cea27fc503c1",
-                  "weight": 0.6912748705434735,
+                  "weight": 0.8374057285581542,
                   "enableClose": false,
                   "children": [
                     {
@@ -202,7 +202,8 @@
                       "enableClose": false,
                       "icon": "svg:variable"
                     }
-                  ]
+                  ],
+                  "active": true
                 }
               ]
             },
@@ -215,62 +216,38 @@
               "children": [
                 {
                   "type": "tab",
-                  "id": "#556cfe3c-f8b7-481b-a6c1-0d099f41fc0a",
-                  "name": "onCompleteClick",
+                  "id": "#9910fa5b-baf6-4ab3-90a3-ffd893bacba7",
+                  "name": "onLevelClick",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/actions/1",
+                    "objectPath": "[10inch_no_Images.eez-project]:/actions/2",
                     "permanent": false
                   },
                   "icon": "material:code"
                 },
                 {
                   "type": "tab",
-                  "id": "#d8d67d72-78e3-4728-8d83-278aebab88fe",
-                  "name": "CompleteLevelButton",
+                  "id": "#f71cb232-0468-4a71-90f1-a7bc37b3c87b",
+                  "name": "LevelPoint",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/userWidgets/2",
+                    "objectPath": "[10inch_no_Images.eez-project]:/userWidgets/1",
                     "permanent": false
                   },
                   "icon": "svg:user_widget"
                 },
                 {
                   "type": "tab",
-                  "id": "#34c80d97-7cd6-452e-9608-1f2588533db4",
-                  "name": "Settings",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/settings",
-                    "subObjectPath": "[10inch_no_Images.eez-project]:/settings",
-                    "permanent": false
-                  },
-                  "icon": "material:settings"
-                },
-                {
-                  "type": "tab",
                   "id": "#f941894a-8c9a-4758-8e7b-432bc679f4be",
-                  "name": "Level1",
+                  "name": "Roadmap",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/5",
+                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/4",
                     "permanent": false
-                  },
-                  "icon": "svg:page"
-                },
-                {
-                  "type": "tab",
-                  "id": "#5dd40b41-2cf8-46a6-b857-c93183ecaf52",
-                  "name": "HomePage",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/0",
-                    "permanent": true
                   },
                   "icon": "svg:page"
                 }
-              ],
-              "active": true
+              ]
             },
             {
               "type": "tabset",
@@ -418,13 +395,14 @@
             {
               "type": "row",
               "id": "#7190eb70-2e67-48c6-9c26-f55758b2adee",
-              "weight": 0,
-              "width": 320,
+              "weight": 0.2545864424111169,
+              "width": 401,
               "children": [
                 {
                   "type": "tabset",
                   "id": "#93f58f26-ca11-41a5-9cbe-751fecc6742d",
                   "weight": 1,
+                  "selected": 1,
                   "children": [
                     {
                       "type": "tab",
@@ -485,36 +463,47 @@
               ]
             },
             {
-              "type": "tabset",
-              "id": "RUNTIME-EDITORS",
-              "weight": 1,
-              "enableDeleteWhenEmpty": false,
-              "enableClose": false,
-              "children": [
-                {
-                  "type": "tab",
-                  "id": "#53a10f12-a7ad-4c2a-9225-e049140dab74",
-                  "name": "Roadmap",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/4",
-                    "permanent": false
-                  },
-                  "icon": "svg:page"
-                }
-              ],
-              "active": true
-            },
-            {
               "type": "row",
-              "id": "#148dae99-d2d5-4f07-a911-26b5bb14e694",
-              "weight": 0,
-              "width": 320,
+              "id": "#d1197d52-1afb-4a97-b3b9-1c92d31405db",
+              "weight": 0.6171022993107373,
               "children": [
                 {
                   "type": "tabset",
-                  "id": "#d77bb80a-978b-4232-a7ac-d98932ccdf27",
-                  "weight": 1,
+                  "id": "RUNTIME-EDITORS",
+                  "weight": 81.03225806451613,
+                  "selected": 1,
+                  "enableDeleteWhenEmpty": false,
+                  "enableClose": false,
+                  "children": [
+                    {
+                      "type": "tab",
+                      "id": "#408ba550-d9a7-425e-a85e-0a448486d1fe",
+                      "name": "LevelPoint",
+                      "component": "editor",
+                      "config": {
+                        "objectPath": "[10inch_no_Images.eez-project]:/userWidgets/1",
+                        "permanent": false
+                      },
+                      "icon": "svg:user_widget"
+                    },
+                    {
+                      "type": "tab",
+                      "id": "#b93e51c0-d197-41be-9d95-465340021ebf",
+                      "name": "HomePage",
+                      "component": "editor",
+                      "config": {
+                        "objectPath": "[10inch_no_Images.eez-project]:/userPages/0",
+                        "permanent": false
+                      },
+                      "icon": "svg:page"
+                    }
+                  ],
+                  "active": true
+                },
+                {
+                  "type": "tabset",
+                  "id": "#c1073b3b-96da-4d19-ba1e-b01d031d773b",
+                  "weight": 18.967741935483872,
                   "children": [
                     {
                       "type": "tab",
@@ -523,7 +512,22 @@
                       "component": "queue",
                       "enableClose": false,
                       "icon": "svg:queue_panel"
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "#148dae99-d2d5-4f07-a911-26b5bb14e694",
+              "weight": 0.12831125827814568,
+              "width": 155,
+              "children": [
+                {
+                  "type": "tabset",
+                  "id": "#d77bb80a-978b-4232-a7ac-d98932ccdf27",
+                  "weight": 1,
+                  "children": [
                     {
                       "type": "tab",
                       "id": "BREAKPOINTS_PALETTE",
@@ -1118,7 +1122,7 @@
           "x": -235.35881585323466,
           "y": -156.694565672441
         },
-        "scale": 0.5
+        "scale": 1
       },
       "timeline": {
         "isEditorActive": false,
@@ -1141,7 +1145,7 @@
           "x": -354.1597125186417,
           "y": -199.98746634198233
         },
-        "scale": 1.25
+        "scale": 1
       },
       "timeline": {
         "isEditorActive": false,
@@ -1164,7 +1168,7 @@
           "x": -284.5606060606061,
           "y": -177.18787878787873
         },
-        "scale": 1.25
+        "scale": 0.8
       },
       "timeline": {
         "isEditorActive": false,
@@ -1183,10 +1187,10 @@
       },
       "transform": {
         "translate": {
-          "x": -354.81575757575763,
-          "y": -114.75642838911577
+          "x": -262.50816161616166,
+          "y": -117.27514240611683
         },
-        "scale": 0.5
+        "scale": 0.8
       },
       "timeline": {
         "isEditorActive": false,
@@ -1284,16 +1288,17 @@
     "[10inch_no_Images.eez-project]:/userWidgets/1[flow-state]": {
       "selectionFront": {},
       "selectionBack": {
-        "2": {
+        "0": {
           "$selected": true
-        }
+        },
+        "2": {}
       },
       "transform": {
         "translate": {
-          "x": -230.10607233908613,
-          "y": -141.31837005051943
+          "x": -325.025479200445,
+          "y": -106.88748412702748
         },
-        "scale": 0.5
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1305,16 +1310,14 @@
     "[10inch_no_Images.eez-project]:/userWidgets/2[flow-state]": {
       "selectionFront": {},
       "selectionBack": {
-        "0": {
-          "$selected": true
-        }
+        "0": {}
       },
       "transform": {
         "translate": {
-          "x": -118.55042521158866,
-          "y": -67.92532925629494
+          "x": -272.39027442115116,
+          "y": -97.27895799785203
         },
-        "scale": 0.5
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1348,16 +1351,17 @@
       "selectionFront": {},
       "selectionBack": {
         "0": {
+          "4": {},
           "9": {}
         },
         "1": {}
       },
       "transform": {
         "translate": {
-          "x": -263.674973675802,
-          "y": -172.84151935743643
+          "x": -256.9512861688602,
+          "y": -298.4862014946966
         },
-        "scale": 0.5
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1371,19 +1375,19 @@
       "selectionBack": {
         "0": {
           "0": {},
-          "1": {},
-          "2": {},
-          "3": {
+          "1": {
             "$selected": true
-          }
+          },
+          "2": {},
+          "3": {}
         }
       },
       "transform": {
         "translate": {
-          "x": -319.4006730784406,
-          "y": -265.2074264916315
+          "x": -213.2611932914631,
+          "y": -152.56529716091256
         },
-        "scale": 0.5
+        "scale": 1
       },
       "timeline": {
         "isEditorActive": false,
@@ -1411,14 +1415,29 @@
     },
     "[10inch_no_Images.eez-project]:/actions/1[flow-state]": {
       "selection": {
-        "6": {
+        "0": {
+          "$selected": true
+        },
+        "1": {}
+      },
+      "transform": {
+        "translate": {
+          "x": -320.1606554077093,
+          "y": -108.43491225959349
+        },
+        "scale": 0.5
+      }
+    },
+    "[10inch_no_Images.eez-project]:/actions/2[flow-state]": {
+      "selection": {
+        "0": {
           "$selected": true
         }
       },
       "transform": {
         "translate": {
-          "x": 242.53699951497236,
-          "y": -43.95077698028471
+          "x": -183.0749512698735,
+          "y": 65.88840932151619
         },
         "scale": 0.75
       }
@@ -1444,7 +1463,7 @@
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 0.5,
+  "flowZoom": 0.67,
   "implementationLanguage": "C",
   "openDialogDefaultPath": "C:\\Users\\anton\\eez-projects\\eez-studio-project\\10inch_no_Images\\assets\\roadmap\\level_ongoing.png"
 }
