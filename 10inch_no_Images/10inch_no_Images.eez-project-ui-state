@@ -1,7 +1,7 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/3",
-    "selectedBitmapObject": "[10inch_no_Images.eez-project]:/bitmaps/-1",
+    "selectedUserPageObject": "[10inch_no_Images.eez-project]:/userPages/0",
+    "selectedUserWidgetObject": "[10inch_no_Images.eez-project]:/userWidgets/0",
     "subnavigationSelectedItems": {}
   },
   "layoutModel": {
@@ -131,6 +131,7 @@
                   "type": "tabset",
                   "id": "#65ba565e-2842-457d-95d2-c69fed28e6c2",
                   "weight": 1,
+                  "selected": 1,
                   "enableClose": false,
                   "children": [
                     {
@@ -200,6 +201,17 @@
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
+                {
+                  "type": "tab",
+                  "id": "#71399d6a-013c-409e-83ec-be29d3482702",
+                  "name": "NavBar",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[10inch_no_Images.eez-project]:/userWidgets/0",
+                    "permanent": false
+                  },
+                  "icon": "svg:user_widget"
+                },
                 {
                   "type": "tab",
                   "id": "#f941894a-8c9a-4758-8e7b-432bc679f4be",
@@ -1081,7 +1093,7 @@
           "x": -342.4000244140625,
           "y": -232.00001525878906
         },
-        "scale": 0.67
+        "scale": 2
       },
       "timeline": {
         "isEditorActive": false,
@@ -1134,7 +1146,7 @@
           "x": -354.81575757575763,
           "y": -214.75642838911577
         },
-        "scale": 0.67
+        "scale": 2
       },
       "timeline": {
         "isEditorActive": false,
@@ -1201,6 +1213,25 @@
         "secondToPx": 200,
         "scrollLeft": 0
       }
+    },
+    "[10inch_no_Images.eez-project]:/userWidgets/0[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {
+        "1": {}
+      },
+      "transform": {
+        "translate": {
+          "x": -1795.594527363184,
+          "y": -97.67158949363288
+        },
+        "scale": 2
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
     }
   },
   "activeOutputSection": 0,
@@ -1220,6 +1251,6 @@
   "lvglExpandedPropertiesGroup": [],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 0.67,
+  "flowZoom": 2,
   "implementationLanguage": "C"
 }
