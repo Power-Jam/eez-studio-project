@@ -194,6 +194,7 @@ typedef struct _objects_t {
     lv_obj_t *obj19__obj9;
     lv_obj_t *obj19__obj10;
     lv_obj_t *obj19__obj11;
+    lv_obj_t *background_homepage;
     lv_obj_t *btn_start;
     lv_obj_t *btn_users;
     lv_obj_t *add_user_button;

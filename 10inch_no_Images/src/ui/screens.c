@@ -13,13 +13,24 @@
 objects_t objects;
 
 static const char *screen_names[] = { "HomePage", "UserListView", "UserCreation", "Chapters", "Roadmap", "Level1", "Level2", "TestingSensors", "ProfilePage", "ShopPage" };
-static const char *object_names[] = { "home_page", "user_list_view", "user_creation", "chapters", "roadmap", "level1", "level2", "testing_sensors", "profile_page", "shop_page", "obj0", "obj0__obj0", "obj0__back_button", "obj0__listen_button", "obj0__help_button", "obj0__obj1", "obj0__obj2", "obj0__obj3", "obj0__obj4", "obj0__obj5", "obj1", "obj1__obj0", "obj1__back_button", "obj1__listen_button", "obj1__help_button", "obj1__obj1", "obj1__obj2", "obj1__obj3", "obj1__obj4", "obj1__obj5", "level_point_1", "level_point_1__obj6", "level_point_1__level", "level_point_1__level_done", "level_point_1__level_ongoing", "level_point_2", "level_point_2__obj6", "level_point_2__level", "level_point_2__level_done", "level_point_2__level_ongoing", "level_point_3", "level_point_3__obj6", "level_point_3__level", "level_point_3__level_done", "level_point_3__level_ongoing", "level_point_4", "level_point_4__obj6", "level_point_4__level", "level_point_4__level_done", "level_point_4__level_ongoing", "level_point_5", "level_point_5__obj6", "level_point_5__level", "level_point_5__level_done", "level_point_5__level_ongoing", "level_point_6", "level_point_6__obj6", "level_point_6__level", "level_point_6__level_done", "level_point_6__level_ongoing", "level_point_7", "level_point_7__obj6", "level_point_7__level", "level_point_7__level_done", "level_point_7__level_ongoing", "level_point_8", "level_point_8__obj6", "level_point_8__level", "level_point_8__level_done", "level_point_8__level_ongoing", "obj2", "obj2__lvl1_complete_level_button", "obj2__obj7", "obj3", "obj3__obj0", "obj3__back_button", "obj3__listen_button", "obj3__help_button", "obj3__obj1", "obj3__obj2", "obj3__obj3", "obj3__obj4", "obj3__obj5", "obj4", "obj4__lvl1_complete_level_button", "obj4__obj7", "obj5", "obj5__lvl1_complete_level_button", "obj5__obj7", "obj6", "obj6__obj0", "obj6__back_button", "obj6__listen_button", "obj6__help_button", "obj6__obj1", "obj6__obj2", "obj6__obj3", "obj6__obj4", "obj6__obj5", "obj7", "obj7__obj0", "obj7__back_button", "obj7__listen_button", "obj7__help_button", "obj7__obj1", "obj7__obj2", "obj7__obj3", "obj7__obj4", "obj7__obj5", "obj8", "obj8__obj8", "obj8__obj9", "obj8__obj10", "obj8__obj11", "obj9", "obj9__obj8", "obj9__obj9", "obj9__obj10", "obj9__obj11", "obj10", "obj10__obj8", "obj10__obj9", "obj10__obj10", "obj10__obj11", "obj11", "obj11__obj8", "obj11__obj9", "obj11__obj10", "obj11__obj11", "obj12", "obj12__obj8", "obj12__obj9", "obj12__obj10", "obj12__obj11", "obj13", "obj13__obj8", "obj13__obj9", "obj13__obj10", "obj13__obj11", "obj14", "obj14__obj8", "obj14__obj9", "obj14__obj10", "obj14__obj11", "obj15", "obj15__obj8", "obj15__obj9", "obj15__obj10", "obj15__obj11", "obj16", "obj16__obj8", "obj16__obj9", "obj16__obj10", "obj16__obj11", "obj17", "obj17__obj8", "obj17__obj9", "obj17__obj10", "obj17__obj11", "obj18", "obj18__obj8", "obj18__obj9", "obj18__obj10", "obj18__obj11", "obj19", "obj19__obj8", "obj19__obj9", "obj19__obj10", "obj19__obj11", "btn_start", "btn_users", "add_user_button", "obj20", "obj21", "backdrop_user_creation", "shape_user_creation_0", "text_user_creation_0", "text_user_creation_2", "action_user_creation_avatar_1_1", "action_user_creation_avatar_2_2", "action_user_creation_avatar_3_3", "action_user_creation_avatar_4_4", "action_user_creation_avatar_5_5", "action_user_creation_avatar_6_6", "action_user_creation_avatar_7_7", "action_user_creation_avatar_8_8", "action_user_creation_avatar_9_9", "action_user_creation_cancel_10", "text_user_creation_3", "action_user_creation_confirm_11", "text_user_creation_4", "obj22", "obj23", "obj24", "obj25", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "shop_button", "user_selection", "shop_overlay", "close_button" };
+static const char *object_names[] = { "home_page", "user_list_view", "user_creation", "chapters", "roadmap", "level1", "level2", "testing_sensors", "profile_page", "shop_page", "obj0", "obj0__obj0", "obj0__back_button", "obj0__listen_button", "obj0__help_button", "obj0__obj1", "obj0__obj2", "obj0__obj3", "obj0__obj4", "obj0__obj5", "obj1", "obj1__obj0", "obj1__back_button", "obj1__listen_button", "obj1__help_button", "obj1__obj1", "obj1__obj2", "obj1__obj3", "obj1__obj4", "obj1__obj5", "level_point_1", "level_point_1__obj6", "level_point_1__level", "level_point_1__level_done", "level_point_1__level_ongoing", "level_point_2", "level_point_2__obj6", "level_point_2__level", "level_point_2__level_done", "level_point_2__level_ongoing", "level_point_3", "level_point_3__obj6", "level_point_3__level", "level_point_3__level_done", "level_point_3__level_ongoing", "level_point_4", "level_point_4__obj6", "level_point_4__level", "level_point_4__level_done", "level_point_4__level_ongoing", "level_point_5", "level_point_5__obj6", "level_point_5__level", "level_point_5__level_done", "level_point_5__level_ongoing", "level_point_6", "level_point_6__obj6", "level_point_6__level", "level_point_6__level_done", "level_point_6__level_ongoing", "level_point_7", "level_point_7__obj6", "level_point_7__level", "level_point_7__level_done", "level_point_7__level_ongoing", "level_point_8", "level_point_8__obj6", "level_point_8__level", "level_point_8__level_done", "level_point_8__level_ongoing", "obj2", "obj2__lvl1_complete_level_button", "obj2__obj7", "obj3", "obj3__obj0", "obj3__back_button", "obj3__listen_button", "obj3__help_button", "obj3__obj1", "obj3__obj2", "obj3__obj3", "obj3__obj4", "obj3__obj5", "obj4", "obj4__lvl1_complete_level_button", "obj4__obj7", "obj5", "obj5__lvl1_complete_level_button", "obj5__obj7", "obj6", "obj6__obj0", "obj6__back_button", "obj6__listen_button", "obj6__help_button", "obj6__obj1", "obj6__obj2", "obj6__obj3", "obj6__obj4", "obj6__obj5", "obj7", "obj7__obj0", "obj7__back_button", "obj7__listen_button", "obj7__help_button", "obj7__obj1", "obj7__obj2", "obj7__obj3", "obj7__obj4", "obj7__obj5", "obj8", "obj8__obj8", "obj8__obj9", "obj8__obj10", "obj8__obj11", "obj9", "obj9__obj8", "obj9__obj9", "obj9__obj10", "obj9__obj11", "obj10", "obj10__obj8", "obj10__obj9", "obj10__obj10", "obj10__obj11", "obj11", "obj11__obj8", "obj11__obj9", "obj11__obj10", "obj11__obj11", "obj12", "obj12__obj8", "obj12__obj9", "obj12__obj10", "obj12__obj11", "obj13", "obj13__obj8", "obj13__obj9", "obj13__obj10", "obj13__obj11", "obj14", "obj14__obj8", "obj14__obj9", "obj14__obj10", "obj14__obj11", "obj15", "obj15__obj8", "obj15__obj9", "obj15__obj10", "obj15__obj11", "obj16", "obj16__obj8", "obj16__obj9", "obj16__obj10", "obj16__obj11", "obj17", "obj17__obj8", "obj17__obj9", "obj17__obj10", "obj17__obj11", "obj18", "obj18__obj8", "obj18__obj9", "obj18__obj10", "obj18__obj11", "obj19", "obj19__obj8", "obj19__obj9", "obj19__obj10", "obj19__obj11", "background_homepage", "btn_start", "btn_users", "add_user_button", "obj20", "obj21", "backdrop_user_creation", "shape_user_creation_0", "text_user_creation_0", "text_user_creation_2", "action_user_creation_avatar_1_1", "action_user_creation_avatar_2_2", "action_user_creation_avatar_3_3", "action_user_creation_avatar_4_4", "action_user_creation_avatar_5_5", "action_user_creation_avatar_6_6", "action_user_creation_avatar_7_7", "action_user_creation_avatar_8_8", "action_user_creation_avatar_9_9", "action_user_creation_cancel_10", "text_user_creation_3", "action_user_creation_confirm_11", "text_user_creation_4", "obj22", "obj23", "obj24", "obj25", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "shop_button", "user_selection", "shop_overlay", "close_button" };
 
 //
 // Event handlers
 //
 
 lv_obj_t *tick_value_change_obj;
+
+static void event_handler_cb_home_page_home_page(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_SCREEN_LOAD_START) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, -1, 16, e);
+    }
+}
 
 static void event_handler_cb_home_page_btn_start(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
@@ -28,7 +39,7 @@ static void event_handler_cb_home_page_btn_start(lv_event_t *e) {
     
     if (event == LV_EVENT_CLICKED) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 0, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 2, 0, e);
     }
 }
 
@@ -39,7 +50,7 @@ static void event_handler_cb_home_page_btn_users(lv_event_t *e) {
     
     if (event == LV_EVENT_CLICKED) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 2, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 3, 0, e);
     }
 }
 
@@ -322,9 +333,17 @@ void create_screen_home_page() {
     objects.home_page = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 1024, 600);
+    lv_obj_add_event_cb(obj, event_handler_cb_home_page_home_page, LV_EVENT_ALL, flowState);
     lv_obj_set_style_bg_color(obj, lv_color_hex(0xfaf7ef), LV_PART_MAIN | LV_STATE_DEFAULT);
     {
         lv_obj_t *parent_obj = obj;
+        {
+            // background-homepage
+            lv_obj_t *obj = lv_image_create(parent_obj);
+            objects.background_homepage = obj;
+            lv_obj_set_pos(obj, 0, 0);
+            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+        }
         {
             // Btn_start
             lv_obj_t *obj = lv_button_create(parent_obj);
@@ -363,6 +382,7 @@ void create_screen_home_page() {
 void delete_screen_home_page() {
     lv_obj_delete(objects.home_page);
     objects.home_page = 0;
+    objects.background_homepage = 0;
     objects.btn_start = 0;
     objects.btn_users = 0;
     deletePageFlowState(0);

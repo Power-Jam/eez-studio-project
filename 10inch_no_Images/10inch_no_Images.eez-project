@@ -396,6 +396,72 @@
       ],
       "name": "onLevelClick",
       "implementationType": "flow"
+    },
+    {
+      "objID": "052e72d6-33b9-4114-86bb-0d1cc393331c",
+      "components": [
+        {
+          "objID": "0ee5735e-12f7-4702-9564-5b0a75dc1faf",
+          "type": "StartActionComponent",
+          "left": -271,
+          "top": -106,
+          "width": 87,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": []
+        },
+        {
+          "objID": "6adba6cb-4d16-4ab1-8d2c-934c0036399d",
+          "type": "LVGLActionComponent",
+          "left": -289,
+          "top": 14,
+          "width": 464,
+          "height": 53,
+          "customInputs": [],
+          "customOutputs": [],
+          "actions": [
+            {
+              "objID": "58b02497-fa15-4ee5-dd35-e5cb5bfc01a3",
+              "action": "imageSetSrc",
+              "object": "background_homepage",
+              "objectType": "literal",
+              "src": "\"S:/homepage/homepage-background.jpg\"",
+              "srcType": "expression"
+            }
+          ]
+        },
+        {
+          "objID": "a1ac930e-16e0-443c-d643-5f4db2564f17",
+          "type": "EndActionComponent",
+          "left": 126,
+          "top": -106,
+          "width": 87,
+          "height": 24,
+          "customInputs": [],
+          "customOutputs": []
+        }
+      ],
+      "connectionLines": [
+        {
+          "objID": "10bd4319-5ca8-4804-d058-487312214279",
+          "source": "0ee5735e-12f7-4702-9564-5b0a75dc1faf",
+          "output": "@seqout",
+          "target": "6adba6cb-4d16-4ab1-8d2c-934c0036399d",
+          "input": "@seqin"
+        },
+        {
+          "objID": "662ff42a-bf00-4fe7-848e-492e02d65dc3",
+          "source": "6adba6cb-4d16-4ab1-8d2c-934c0036399d",
+          "output": "@seqout",
+          "target": "a1ac930e-16e0-443c-d643-5f4db2564f17",
+          "input": "@seqin"
+        }
+      ],
+      "localVariables": [],
+      "componentGroups": [],
+      "userProperties": [],
+      "name": "loadTestImage",
+      "implementationType": "flow"
     }
   ],
   "userPages": [
@@ -418,12 +484,69 @@
             "childStyles": []
           },
           "timeline": [],
-          "eventHandlers": [],
+          "eventHandlers": [
+            {
+              "objID": "66a35236-7059-4006-8fdb-279dcf68b19e",
+              "eventName": "SCREEN_LOAD_START",
+              "handlerType": "action",
+              "action": "loadTestImage",
+              "userData": 0
+            }
+          ],
           "leftUnit": "px",
           "topUnit": "px",
           "widthUnit": "px",
           "heightUnit": "px",
           "children": [
+            {
+              "objID": "bb8cef3f-b57c-4fdd-81d1-23b7f29db842",
+              "type": "LVGLImageWidget",
+              "left": 0,
+              "top": 0,
+              "width": 0,
+              "height": 0,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "10e58d4d-f114-46d4-e0ec-f3d6427da2b6",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "background-homepage",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "content",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "ADV_HITTEST|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "92bc8136-fc05-4771-d8db-3c8018da428b"
+              },
+              "group": "",
+              "groupIndex": 0,
+              "setPivot": false,
+              "pivotX": 0,
+              "pivotY": 0,
+              "zoom": 256,
+              "angle": 0,
+              "innerAlign": "CENTER",
+              "sizeMode": "VIRTUAL",
+              "value": 0,
+              "valueType": "literal",
+              "previewValue": 0
+            },
             {
               "objID": "dcb977ab-d8a6-471d-d10f-4c4ff3a5543a",
               "type": "LVGLButtonWidget",
