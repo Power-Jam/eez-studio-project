@@ -169,8 +169,7 @@
                       "enableClose": false,
                       "icon": "material:code"
                     }
-                  ],
-                  "active": true
+                  ]
                 },
                 {
                   "type": "tabset",
@@ -209,6 +208,7 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 49.928457928927855,
+              "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
@@ -237,15 +237,16 @@
                 {
                   "type": "tab",
                   "id": "#f941894a-8c9a-4758-8e7b-432bc679f4be",
-                  "name": "Roadmap",
+                  "name": "HomePage",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/4",
+                    "objectPath": "[10inch_no_Images.eez-project]:/userPages/0",
                     "permanent": false
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "tabset",
@@ -1120,7 +1121,7 @@
           "x": -235.35881585323466,
           "y": -156.694565672441
         },
-        "scale": 1
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1385,7 +1386,7 @@
           "x": -213.2611932914631,
           "y": -152.56529716091256
         },
-        "scale": 1
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1402,7 +1403,7 @@
           "x": -313.5999755859375,
           "y": -166.39999389648438
         },
-        "scale": 0.5
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
