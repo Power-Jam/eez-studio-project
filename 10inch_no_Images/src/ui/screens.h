@@ -369,15 +369,6 @@ typedef struct _objects_t {
     lv_obj_t *lesson_step_7_pic_2;
     lv_obj_t *lesson_step_7_pic_3;
     lv_obj_t *lesson_step_7_pic_4;
-    lv_obj_t *lesson_step_8;
-    lv_obj_t *lesson_step_8_card_0;
-    lv_obj_t *lesson_step_8_card_1;
-    lv_obj_t *lesson_step_8_pic_0;
-    lv_obj_t *lesson_step_8_pic_1;
-    lv_obj_t *lesson_choice_house;
-    lv_obj_t *lesson_choice_battery;
-    lv_obj_t *lesson_choice_lamp;
-    lv_obj_t *lesson_step_8_pic_5;
     lv_obj_t *lesson_branch_1_0;
     lv_obj_t *lesson_branch_1_0_card_0;
     lv_obj_t *lesson_branch_1_0_pic_0;
